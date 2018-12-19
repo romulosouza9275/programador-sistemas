@@ -1,6 +1,7 @@
 package util;
 
 public class GerarSenha {
+private static Object Teclado;
 public static String gerarSenha() {
 	String senha = "";
 	for(int i = 0; i < 8; i++)
@@ -47,13 +48,13 @@ System.out.println("===================================================");
 public void cadastrarUsuario() {
 System.out.println("====================================================");
 
-String cep = Teclado.lerTextp("CEP:");
+String cep = Teclado.lerTexto("CEP:");
 
 Object senha;
-senha = GerarSenha.GerarSenha();
+senha = GerarSenha.gerarSenha();
 System.out.println("Senha gerada: " + senha);
 }
-}
+
 }
 }
 }
